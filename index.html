@@ -1,0 +1,401 @@
+<html>
+
+<head>
+    <title>PRINT on WEB on PRINT</title>
+    <link rel="stylesheet" href="style.css">
+    <style id="printStyle" type="text/css">
+
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $(function() {
+        $("#paper").draggable();
+    });
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $(function() {
+        $(document).tooltip({
+            track: true
+        });
+    });
+    </script>
+    <script src="myscripts.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div class="exhibition">
+        <img src="resize.png">
+        <div class="container">
+            <div class="content">
+                <p>
+                    <br>
+                    Dear Audience,
+                    <br>
+                    <br> Every day ☀︎ and night ★, we would look at something on some surface. Paper and screen are the two dominant and prevailing surface in my 2017 mundane life.
+                    <br>
+                    <br> This website and its print exhibits is a short story of what happened when the standard size paper exists in real scale on the screen within the browser viewport, and the browser sizes being printed in real scale on standard size paper within their crop marks.
+                    <br>
+                    <br> With the paper only partly showed up on the screen condition, the online exhibition reminds us the browser sizes as well as its limitation. While we print from online, we got the browser sizes being print on paper to tell us the volatility of its form.
+                    <br>
+                    <br> Paper and screen reveal each other in this little interaction. The screen is much limited with incredible potential, while the paper is the same.
+                    <br>
+                    <br> Feel the scale of the paper in the analog scenario and look at the inch numbers while we dive in the virtual world. Through the two corresponding formats and content, the exhibition is for this collective experience we have now when wandering in between print and web.
+                    <br>
+                    <br> If you have to know more, Google “paper sizes” or “browser sizes”. Look what I found when I just Google:
+                    <br>
+                    <br> papersizes.io/us/
+                    <br> apple.com/mac/compare/
+                    <br> apple.com/ipad/compare/
+                    <br>
+                    <br> Thank you!
+                    <br>
+                    <br> Yours,
+                    <br> The person who takes full responsibility of the whole experience: Yangyifan Dong
+                    <br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- web size layer -->
+    <div id="webID" class="web">
+        <p id="web-1"><span class="diagonal"><span></p>
+	<p id="web-2" ><span class="diagonal"><span></p>
+	<p id="web-3" ><span class="diagonal"><span></p>
+	<p id="web-4" ><span class="diagonal"><span></p>
+	<p id="web-5" ><span class="diagonal"><span></p>
+	<p id="web-6" ><span class="diagonal"><span></p>
+	<p id="web-7" ><span class="diagonal"><span></p>
+	<p id="web-8" ><span class="diagonal"><span></p>
+	<p id="web-9" ><span class="diagonal"><span></p>
+
+	<div id="webInfo-7" class="webInfo" >
+		<img src="images/7.9in.png">
+	</div>
+
+	<div id="webInfo-9" class="webInfo" >
+		<img src="images/9.7in.png">
+	</div>	
+
+	<div id="webInfo-10" class="webInfo" >
+		<img src="images/10.5in.png">
+	</div>	
+
+	<div id="webInfo-129" class="webInfo" >
+		<img src="images/12.9in.png">
+	</div>
+
+	<div id="webInfo-12" class="webInfo" >
+		<img src="images/12in.png">
+	</div>
+
+	<div id="webInfo-13" class="webInfo" >
+		<img src="images/13in.png">
+	</div>
+
+	<div id="webInfo-15" class="webInfo" >
+		<img src="images/15.4in.png">
+	</div>
+
+	<div id="webInfo-21" class="webInfo" >
+		<img src="images/21.5in.png">
+	</div>	
+
+	<div id="webInfo-27" class="webInfo" >
+		<img src="images/27in.png">
+	</div>		
+
+</div>
+
+
+<!-- print cropmarks -->
+<div class="cropmarks">
+
+	<div class="c1-1"></div>
+	<div class="c1-2"></div>
+
+	<div class="c2-1"></div>
+	<div class="c2-2"></div>
+
+	<div class="c3-1"></div>
+	<div class="c3-2"></div>
+
+	<div class="c4-1"></div>
+	<div class="c4-2"></div>
+
+</div>
+
+<!-- <div class="cropmarks"></div> -->
+
+	
+<!-- paper size layer -->	
+<div class="paper">
+
+	<div class="letter">
+		
+		<div id="lt-top-left" class="hl-1"></div>
+		<div id="lt-top-left" class="vl-1"></div>
+
+		<div class="lt-1">8.5''</div>
+		
+		<div id="lt-top-right" class="vl-3"></div>
+		<div id="lt-top-right" class="hl-3"></div>
+		
+		<div class="lt-2">11''</div>
+
+		<a href="#" title="8.5x11in 'Commonly used as a home or office stationery in the United States, Canada, Mexico, Chile and the Dominican Republic, US Letter size paper is a standard defined by the American National Standards Institute (ANSI), in contrast to the A4 paper used by all other nations.' I use letter size in my design for its accessibility and the standard meaning in the United States."> <div class="lt-blank" data-hoverimage="images/lt.png"></div></a>
+
+
+		<div class="lt-3">11''</div>
+		
+		<div id="lt-bottom-left" class="hl-2"></div>
+		<div id="lt-bottom-left" class="vl-2"></div>
+
+		<div class="lt-4">8.5''</div>
+
+		<div id="lt-bottom-right" class="vl-4"></div>
+		<div id="lt-bottom-right" class="hl-4"></div>
+
+	</div>
+
+
+	<div class="tabloid">
+		
+		<div id="t-top-left" class="hl-1"></div>
+		<div id="t-top-left" class="vl-1"></div>
+
+		<div class="t-1">17''</div>
+		
+		<div id="t-top-right" class="vl-3"></div>
+		<div id="t-top-right" class="hl-3"></div>
+		
+		<div class="t-2">11''</div>
+
+		
+		<a href="#" title="11x17in | 'Tabloid size is a standard defined by the American National Standards Institute (ANSI) format. It is widely used for printing newspapers that have preferred a smaller size than usual. The term tabloid comes from the London pills manufacturer Burroughs, who adopted it to define the pills that it manufactured in the late nineteenth century.' I have used tabloid to crop larger paper than the letter size, fold it in half to make booklets, etc. "> <div class="t-blank" data-hoverimage="images/t.png"></div></a>
+
+		<div class="t-3">11''</div>
+		
+		<div id="t-bottom-left" class="hl-2"></div>
+		<div id="t-bottom-left" class="vl-2"></div>
+
+		<div class="t-4">17''</div>
+
+		<div id="t-bottom-right" class="vl-4"></div>
+		<div id="t-bottom-right" class="hl-4"></div>
+
+	</div>
+
+
+	<div class="A4">
+		<!-- crop marks -->
+		<div id="A4-top-left" class="hl-1"></div>
+		<div id="A4-top-left" class="vl-1"></div>
+
+		<div class="A4-1">8.3''  |  210mm</div>
+		
+		<div id="A4-top-right" class="vl-3"></div>
+		<div id="A4-top-right" class="hl-3"></div>
+		
+		<div class="A4-2">11.7''  |  297mm</div>
+
+		<!-- paper -->
+		<a href="#" title="11.7 x 8.3in | 'A4 paper is the size most used in the world. It is used as the classic paper sheet in all industrialized countries, and beyond, except in North America. A4 size is defined by the International Organization for Standardization (specifically, in ISO 216).' I had used A4 all the time before I came to the United States. Growing up in China, we had A4 paper for test papers, print out essays."> <div class="A4-blank" data-hoverimage="images/A4.png"></div></a>
+
+		<div class="A4-3">11.7''  |  297mm</div>
+		
+		<div id="A4-bottom-left" class="hl-2"></div>
+		<div id="A4-bottom-left" class="vl-2"></div>
+
+		<div class="A4-4">8.3''  |  210mm</div>
+
+		<div id="A4-bottom-right" class="vl-4"></div>
+		<div id="A4-bottom-right" class="hl-4"></div>
+
+	</div>	
+	
+
+	<div class="A3">
+		<!-- crop marks -->
+		<div id="A3-top-left" class="hl-1"></div>
+		<div id="A3-top-left" class="vl-1"></div>
+
+		<div class="A3-1">16.5''  |  420mm</div>
+		
+		<div id="A3-top-right" class="vl-3"></div>
+		<div id="A3-top-right" class="hl-3"></div>
+		
+		<div class="A3-2">11.7''  |  297mm</div>
+
+		<!-- paper -->
+		<a href="#" title="16.5 x 11.7in | Twice the width of A4 paper, A3 is defined by the International Organization for Standardization (specifically, in ISO 216).My designer friend in China said they used A4 and A3 a lot in her design, just as we do with Letter and Tabloid size."> <div class="A3-blank" data-hoverimage="images/A3.png"></div></a>
+
+		<div class="A3-3">11.7''  |  420mm</div>
+		
+		<div id="A3-bottom-left" class="hl-2"></div>
+		<div id="A3-bottom-left" class="vl-2"></div>
+
+		<div class="A3-4">16.5''  |  420mm</div>
+
+		<div id="A3-bottom-right" class="vl-4"></div>
+		<div id="A3-bottom-right" class="hl-4"></div>
+
+	</div>	
+
+
+	<div class="A5">
+		<!-- crop marks -->
+		<div id="A5-top-left" class="hl-1"></div>
+		<div id="A5-top-left" class="vl-1"></div>
+
+		<div class="A5-1">8.3''  |  210mm</div>
+		
+		<div id="A5-top-right" class="vl-3"></div>
+		<div id="A5-top-right" class="hl-3"></div>
+		
+		<div class="A5-2">5.8''  |  148mm</div>
+
+		<!-- paper -->
+		<a href="#" title="8.3 x 5.8in | 'A5 paper is defined by the International Organization for Standardization (specifically, in ISO 216).' It’s the size A4 folded in half along its short side. Often used as flyers."> <div class="A5-blank" data-hoverimage="images/A5.png"></div></a>
+
+		<div class="A5-3">5.8''  |  148mm</div>
+		
+		<div id="A5-bottom-left" class="hl-2"></div>
+		<div id="A5-bottom-left" class="vl-2"></div>
+
+		<div class="A5-4">8.3''  |  210mm</div>
+
+		<div id="A5-bottom-right" class="vl-4"></div>
+		<div id="A5-bottom-right" class="hl-4"></div>
+
+	</div>	
+
+
+	<div class="A2">
+		<!-- crop marks -->
+		<div id="A2-top-left" class="hl-1"></div>
+		<div id="A2-top-left" class="vl-1"></div>
+
+		<div class="A2-1">16.5''  |  420mm</div>
+		
+		<div id="A2-top-right" class="vl-3"></div>
+		<div id="A2-top-right" class="hl-3"></div>
+		
+		<div class="A2-2">23.4''  |  594mm</div>
+
+		<!-- paper -->
+		<a href="#" title="23.4 x 16.5in | 'A2 paper is defined by the International Organization for Standardization (specifically, in ISO 216).' It mostly used for medium size posters."> <div class="A2-blank" data-hoverimage="images/A2.png"></div></a>
+
+		<div class="A2-3">23.4''  |  594mm</div>
+		
+		<div id="A2-bottom-left" class="hl-2"></div>
+		<div id="A2-bottom-left" class="vl-2"></div>
+
+		<div class="A2-4">16.5''  |  420mm</div>
+
+		<div id="A2-bottom-right" class="vl-4"></div>
+		<div id="A2-bottom-right" class="hl-4"></div>
+
+	</div>	
+
+
+
+	<div class="A1">
+		<!-- crop marks -->
+		<div id="A1-top-left" class="hl-1"></div>
+		<div id="A1-top-left" class="vl-1"></div>
+
+		<div class="A1-1">33.1''  |  841mm</div>
+		
+		<div id="A1-top-right" class="vl-3"></div>
+		<div id="A1-top-right" class="hl-3"></div>
+		
+		<div class="A1-2">23.4''  |  594mm</div>
+
+		<!-- paper -->
+		<a href="#" title="33.1 x 23.4in | 'A1 paper is defined by the International Organization for Standardization (specifically, in ISO 216).' It mostly used for large posters."> <div class="A1-blank" data-hoverimage="images/A1.png"></div></a>
+
+		<div class="A1-3">23.4''  |  594mm</div>
+		
+		<div id="A1-bottom-left" class="hl-2"></div>
+		<div id="A1-bottom-left" class="vl-2"></div>
+
+		<div class="A1-4">33.1''  |  841mm</div>
+
+		<div id="A1-bottom-right" class="vl-4"></div>
+		<div id="A1-bottom-right" class="hl-4"></div>
+
+	</div>	
+
+
+	<div class="A0">
+		<!-- crop marks -->
+		<div id="A0-top-left" class="hl-1"></div>
+		<div id="A0-top-left" class="vl-1"></div>
+
+		<div class="A0-1">33.1''  |  841mm</div>
+		
+		<div id="A0-top-right" class="vl-3"></div>
+		<div id="A0-top-right" class="hl-3"></div>
+		
+		<div class="A0-2">23.4''  |  594mm</div>
+
+		<!-- paper -->
+		<a href="#" title="46.8 x 33.1in | 'By folding an A0 in two along its short side, you create an A1 document. Fold once more and you get an A2 sized document. This way a range of paper sizes is created from A0 (which has a surface of one square meter) to A10.' Un-printed material is an exhibition by Nendo. They 'work with paper but approach it from a different angle.' In the exhibition, they have created outlines of A0 size paper 'as an expression of that paper without actually using paper itself.'"> <div class="A0-blank" data-hoverimage="images/A0.png"></div></a>
+
+		<div class="A0-3">23.4''  |  594mm</div>
+		
+		<div id="A0-bottom-left" class="hl-2"></div>
+		<div id="A0-bottom-left" class="vl-2"></div>
+
+		<div class="A0-4">33.1''  |  841mm</div>
+
+		<div id="A0-bottom-right" class="vl-4"></div>
+		<div id="A0-bottom-right" class="hl-4"></div>
+
+	</div>		
+
+
+	<!-- <div class="B5"> -->
+		<!-- crop marks -->
+<!-- 		<div id="B5-top-left" class="hl-1"></div>
+		<div id="B5-top-left" class="vl-1"></div>
+
+		<div class="B5-1">6.9''  |  176mm</div>
+		
+		<div id="B5-top-right" class="vl-3"></div>
+		<div id="B5-top-right" class="hl-3"></div>
+		
+		<div class="B5-2">9.8''  |  250mm</div> -->
+
+		<!-- paper -->
+<!-- 		<a href="#" title="B5!!!!!! "> <div class="B5-blank" data-hoverimage="images/B5.png"></div></a>
+
+		<div class="B5-3">9.8''  |  250mm</div>
+		
+		<div id="B5-bottom-left" class="hl-2"></div>
+		<div id="B5-bottom-left" class="vl-2"></div>
+
+		<div class="B5-4">6.9''  |  176mm</div>
+
+		<div id="B5-bottom-right" class="vl-4"></div>
+		<div id="B5-bottom-right" class="hl-4"></div> -->
+<!-- 
+	</div>	 -->
+
+
+
+
+</div>
+
+
+	
+
+</body>
+
+</html>
