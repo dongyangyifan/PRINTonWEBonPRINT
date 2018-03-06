@@ -212,7 +212,7 @@ function resizeBrowser() {
     // Plugs visible window width (winW) and height (winH) into pythagorian theorym (A*A + B*B = C*C)
     var pyth = (winW * winW) + (winH * winH);
     // Find square root
-//     var diag = Math.sqrt(pyth) / 96 / 15.7 * 13.3;
+    
     var diag = Math.sqrt(pyth) / 96 / 15.7 * 38.46;
     // Number(diag).toPrecision(2);
     // var screenSize = html(Number(diag).toFixed(1);
