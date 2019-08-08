@@ -16,11 +16,12 @@ $(document).ready(function() {
     $("#webInfo-10").hide();
     $("#webInfo-12").hide();
     $("#webInfo-129").hide();
+    $("#webInfo-20").hide();
     $("#webInfo-13").hide();
-    $("#webInfo-15").hide(); 
-    $("#webInfo-21").hide();  
+    $("#webInfo-15").hide();
+    $("#webInfo-21").hide();
     $("#webInfo-27").hide();
-     
+
 
     resizeBrowser();
     webInfo();
@@ -97,16 +98,22 @@ $(document).ready(function() {
         $(this).css("background-image", "url(" + imgurl + ")")
     }, function() {
         $(this).css("background-image", "");
-    });    
+    });
 
     $(".A1-blank").hover(function() {
         var imgurl = $(this).data("hoverimage");
         $(this).css("background-image", "url(" + imgurl + ")")
     }, function() {
         $(this).css("background-image", "");
-    }); 
+    });
 
     $(".A0-blank").hover(function() {
+        var imgurl = $(this).data("hoverimage");
+        $(this).css("background-image", "url(" + imgurl + ")")
+    }, function() {
+        $(this).css("background-image", "");
+    });
+    $(".F4-blank").hover(function() {
         var imgurl = $(this).data("hoverimage");
         $(this).css("background-image", "url(" + imgurl + ")")
     }, function() {
@@ -157,7 +164,7 @@ $(document).ready(function() {
 function animateContent(direction) {
     var animationOffset = $('.container').height() - $('.content').height();
     // var animationOffset = -7090,
-        durationSpeed = 35000;
+    durationSpeed = 35000;
 
     if (direction == 'up') {
         animationOffset = 0;
@@ -212,8 +219,9 @@ function resizeBrowser() {
     // Plugs visible window width (winW) and height (winH) into pythagorian theorym (A*A + B*B = C*C)
     var pyth = (winW * winW) + (winH * winH);
     // Find square root
-    
-    var diag = Math.sqrt(pyth) / 96 / 15.7 * 38.46;
+
+    // var diag = Math.sqrt(pyth) / 96 / 15.7 * 38.46;
+    var diag = Math.sqrt(pyth) / 96 / 17.3 * 15.4;
     // Number(diag).toPrecision(2);
     // var screenSize = html(Number(diag).toFixed(1);
     $(".diagonal").html(Number(diag).toFixed(1) + "''");
@@ -241,13 +249,17 @@ function webInfo() {
         console.log("test");
         $("#webInfo-13").show();
         $(".diagonal").hide();
-    }  else if (screenSize == "12.0") {
+    } else if (screenSize == "12.0") {
         console.log("test");
         $("#webInfo-12").show();
         $(".diagonal").hide();
     } else if (screenSize == "12.9") {
         console.log("test");
         $("#webInfo-129").show();
+        $(".diagonal").hide();
+    } else if (screenSize == "20.2") {
+        console.log("test");
+        $("#webInfo-20").show();
         $(".diagonal").hide();
     } else if (screenSize == "9.7") {
         console.log("test");
@@ -273,16 +285,14 @@ function webInfo() {
         console.log("test");
         $("#webInfo-7").show();
         $(".diagonal").hide();
-    } 
-
-
-    else {
+    } else {
         $("#webInfo-7").hide();
         $("#webInfo-9").hide();
         $("#webInfo-10").hide();
         $("#webInfo-13").hide();
         $("#webInfo-12").hide();
         $("#webInfo-129").hide();
+        $("#webInfo-20").hide();
         $("#webInfo-15").hide();
         $("#webInfo-21").hide();
         $("#webInfo-27").hide();
